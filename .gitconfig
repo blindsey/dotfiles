@@ -1,0 +1,10 @@
+[user]
+  name = Ben Lindsey
+  email = ben.lindsey@vungle.com
+[alias]
+  st = status
+  br = branch
+  ci = commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit
+[color]
+  ui = true
