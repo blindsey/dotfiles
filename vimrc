@@ -1,12 +1,12 @@
 "spacing
-set tabstop=2
-set shiftwidth=2
-set expandtab
-set smarttab
+set tabstop=2      " number of spaces for tab character
+set shiftwidth=2   " number of spaces to use for each autoindent
+set expandtab      " turn tabs into whitespace
+set smarttab       " tab in front of a line inserts blanks according to shiftwidth
 
 "appearance
-set number
-syntax on
+set number         " always show line numbers
+syntax on          " enable syntax highlighting 
 
 "pathogen
 call pathogen#infect()
