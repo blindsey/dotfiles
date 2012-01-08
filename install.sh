@@ -1,8 +1,13 @@
 #!/bin/bash
 
-DIR=`dirname $0`
-FILES=".gitconfig .gemrc .vimrc .jshintrc"
+cd `dirname $0`
+DIR=`pwd`
+echo $DIR
+
+FILES="gitconfig gemrc vimrc jshintrc"
 for F in $FILES; do
-  mv ~/$F ~/$F.bak
-  ln -s "$DIR/$F" ~/$F
+  if [ -f ~/.$F ]; then
+    mv ~/.$F ~/.$F.bak
+  fi
+  ln -sf "$DIR/$F" ~/.$F
 done
