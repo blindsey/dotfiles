@@ -6,6 +6,6 @@
   br = branch
   ci = commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit
-  me = log --author=Ben --since='1 week' --format='%h%x09%ad%x09%s'
+  me = log --author=Ben --since='1 week' --format='%h %ai %s'
 [color]
   ui = true
