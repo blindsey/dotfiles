@@ -9,3 +9,5 @@
   me = log --author='Ben Lindsey' --since='1 week' --format='%Cblue%h %Cgreen%ad %Creset%s'
 [color]
   ui = true
+[push]
+	default = tracking
