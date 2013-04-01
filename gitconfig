@@ -1,6 +1,6 @@
 [user]
   name = Ben Lindsey
-  email = ben.lindsey@vungle.com
+  email = ben.lindsey@gmail.com
 [alias]
   st = status
   br = branch
@@ -10,4 +10,4 @@
 [color]
   ui = true
 [push]
-	default = tracking
+  default = tracking
