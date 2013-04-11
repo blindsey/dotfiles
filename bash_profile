@@ -1,11 +1,14 @@
 # Environment variables
 export NODE_ENV=development
+export RAILS_ENV=development
 
 # Aliases
 alias ls='ls -G'
 alias startmongo='/usr/local/bin/mongod --fork --logpath /var/log/mongodb.log --logappend'
+alias rmemcached='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist && launchctl load ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist'
+alias tunnel='ssh -L 8140:localhost:8140 puppet-ben'
 
-# Git tab completion
-source /usr/local/Cellar/git/1.7.8/etc/bash_completion.d/git-completion.bash
-PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+source /usr/local/Cellar/git/1.8.1.3/etc/bash_completion.d/git-completion.bash
+source /usr/local/Cellar/git/1.8.1.3/etc/bash_completion.d/git-prompt.sh
 
+PS1='\[\033]0;\u@\h: \w\007\]\h:\w$(__git_ps1 " (%s)")\\$ '
