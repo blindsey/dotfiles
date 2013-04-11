@@ -11,4 +11,4 @@ alias tunnel='ssh -L 8140:localhost:8140 puppet-ben'
 source /usr/local/Cellar/git/1.8.1.3/etc/bash_completion.d/git-completion.bash
 source /usr/local/Cellar/git/1.8.1.3/etc/bash_completion.d/git-prompt.sh
 
-PS1='\[\033]0;\u@\h: \w\007\]\h:\w$(__git_ps1 " (%s)")\\$ '
+PS1='\[\033]0;\u@\h: \w\007\]\h:\w$(__git_ps1 " \[\033[1;31m\](%s)\[\033[0m\]")\\$ '
