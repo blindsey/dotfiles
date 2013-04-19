@@ -3,7 +3,7 @@
 cd `dirname $0`
 DIR=`pwd`
 
-FILES="gitconfig gemrc vimrc jshintrc"
+FILES="gitconfig gemrc vimrc jshintrc puppet-lint.rc"
 for F in $FILES; do
   if [ -f ~/.$F ]; then
     mv ~/.$F ~/.$F.bak
