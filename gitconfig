@@ -8,6 +8,7 @@
   lola = log --graph --decorate --pretty=oneline --abbrev-commit
   me = log --author='Ben Lindsey' --since='1 week' --format='%Cblue%h %Cgreen%ad %Creset%s'
   ls = log --stat
+  up = !git fetch upstream && git rebase upstream/master
 [color]
   ui = true
 [push]
