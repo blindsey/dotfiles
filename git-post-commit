@@ -1,0 +1,10 @@
+#!/bin/bash
+
+EXEC=/usr/local/bin/imagesnap
+if [ -x $EXEC ]; then
+  FILE="$HOME/gitshots/`date +%s`.jpg"
+  echo "Taking capture into $FILE"
+  $EXEC -q -w 3 $FILE
+fi
+
+exit 0
