@@ -6,7 +6,7 @@
   br = branch
   ci = commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit
-  me = log --author='Ben Lindsey' --since='1 week' --format='%Cblue%h %Cgreen%ad %Creset%s'
+  me = log --author='Ben Lindsey' --since='2 week' --format='%Cblue%h %Cgreen%ad %Creset%s'
   ls = log --stat
   up = !git fetch upstream && git rebase upstream/`git rev-parse --abbrev-ref HEAD`
 [color]
